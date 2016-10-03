@@ -1,0 +1,2 @@
+#!/bin/bash
+nvidia-docker run -v $(pwd):/opt/tf/:ro -t tf-gpu python3 /opt/tf/fizz_buzz.py

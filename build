@@ -1,0 +1,3 @@
+#!/bin/bash
+docker build -t tf-cpu cpu/.
+nvidia-docker build -t tf-gpu gpu/.

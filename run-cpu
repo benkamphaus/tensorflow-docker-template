@@ -1,0 +1,2 @@
+#!/bin/bash
+docker run -v $(pwd):/opt/tf/:ro -t tf-cpu python3 /opt/tf/fizz_buzz.py
