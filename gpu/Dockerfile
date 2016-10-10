@@ -26,8 +26,8 @@ RUN pip3 --no-cache-dir install \
 # Install TensorFlow CPU version from central repo
 RUN pip3 --no-cache-dir install --upgrade https://storage.googleapis.com/tensorflow/linux/gpu/tensorflow-0.11.0rc0-cp34-cp34m-linux_x86_64.whl
 
-# Install Keras as blessed lightweight framework
-RUN pip3 install keras
+# Install Keras as blessed lightweight framework, sklearn for metrics, etc.
+RUN pip3 install keras sklearn
 
 EXPOSE 6006
 CMD ["python3"]
