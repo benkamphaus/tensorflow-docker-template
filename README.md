@@ -1,5 +1,6 @@
 # tensorflow-docker-template
-Dockerfile and project config settings for ensuring a TensorFlow project can execute on the CPU or GPU via docker or nvidia-docker.
+Dockerfile and project config settings for ensuring a TensorFlow project can execute on the CPU or GPU via docker or
+[nvidia-docker](https://github.com/NVIDIA/nvidia-docker).
 
 # License 
 
