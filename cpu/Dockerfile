@@ -9,6 +9,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     pkg-config \
     python \
     python-dev \
+    git \
     rsync \
     software-properties-common \
     unzip && \
@@ -27,7 +28,8 @@ RUN pip3 --no-cache-dir install \
 RUN pip3 --no-cache-dir install --upgrade https://storage.googleapis.com/tensorflow/linux/cpu/tensorflow-0.11.0rc0-cp35-cp35m-linux_x86_64.whl
 
 # Install Keras as blessed lightweight framework, sklearn for metrics, etc.
-RUN pip3 install keras sklearn
+RUN pip3 install sklearn
+RUN pip3 install --upgrade git+https://github.com/fchollet/keras.git
 
 EXPOSE 6006
 CMD ["python3"]
